@@ -806,7 +806,7 @@ curl -X POST https://api.resourcewatch.org/v1/dataset \
 The `upload` endpoint allows you to create datasets on the API from local files that aren't available online. 
 If your file is up to 4MB in size, you can upload it to the API by using the `upload` endpoint. 
 This endpoint accepts a file in the "dataset" field of your POST request, and a `provider` that matches your file type and extension. 
-The supported formats/extensions are: csv, json, tsv, xml, tif, tiff and geo.tiff.
+The supported formats/extensions are: csv, json, tsv and xml.
 The request uploads the file to the API, and returns a specially crafted `connectorUrl` value, and a list of fields found in your file.
 With this data, you can create a document type dataset by passing it to the `connectorUrl` value of a [new document type dataset](#document-based-datasets-json-csv-tsv-or-xml).
 
